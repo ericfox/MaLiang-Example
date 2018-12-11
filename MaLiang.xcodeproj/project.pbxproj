@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D1EBAA1B445058D51C18AAF /* Pods_MaLiang_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF3FA5B941FF62868122AF9 /* Pods_MaLiang_Example.framework */; };
+		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
+		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		B604919D209A71C000372B21 /* PaintingGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B604919C209A71C000372B21 /* PaintingGestureRecognizer.swift */; };
+		B6202B88209F50B900DC0C20 /* PaintingPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6202B87209F50B900DC0C20 /* PaintingPreview.swift */; };
+		B69E66A8208C6117005ED0E1 /* MLTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E669C208C6117005ED0E1 /* MLTexture.swift */; };
+		B69E66A9208C6117005ED0E1 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E669D208C6117005ED0E1 /* Canvas.swift */; };
+		B69E66AA208C6117005ED0E1 /* BezierGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E669E208C6117005ED0E1 /* BezierGenerator.swift */; };
+		B69E66AB208C6117005ED0E1 /* ShaderUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E669F208C6117005ED0E1 /* ShaderUtil.swift */; };
+		B69E66AC208C6117005ED0E1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E66A0208C6117005ED0E1 /* Utils.swift */; };
+		B69E66AD208C6117005ED0E1 /* MLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E66A1208C6117005ED0E1 /* MLColor.swift */; };
+		B69E66AE208C6117005ED0E1 /* Brush.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E66A2208C6117005ED0E1 /* Brush.swift */; };
+		B69E66AF208C6117005ED0E1 /* point.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B69E66A4208C6117005ED0E1 /* point.vsh */; };
+		B69E66B0208C6117005ED0E1 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = B69E66A5208C6117005ED0E1 /* point.png */; };
+		B69E66B1208C6117005ED0E1 /* point.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B69E66A6208C6117005ED0E1 /* point.fsh */; };
+		B69E66B4208C61C4005ED0E1 /* MLLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E66B2208C61C4005ED0E1 /* MLLine.swift */; };
+		B69E66B5208C61C4005ED0E1 /* MLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69E66B3208C61C4005ED0E1 /* MLView.swift */; };
+		B6C188BD2099A91B00A312B6 /* ScrollableCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C188BC2099A91B00A312B6 /* ScrollableCanvas.swift */; };
+		B6C188BF2099AA6800A312B6 /* ScrollableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C188BE2099AA6800A312B6 /* ScrollableSample.swift */; };
+		B6F023B2208F2A4700D5CFA7 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F023B1208F2A4700D5CFA7 /* Document.swift */; };
+		B6FFA53F209CA26100936E58 /* pencil-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6FFA53E209CA26100936E58 /* pencil-2@2x.png */; };
+		B6FFA541209CA2C300936E58 /* water-pen-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6FFA540209CA2C200936E58 /* water-pen-2@2x.png */; };
+		B6FFA543209CA31700936E58 /* painting_texture_mb.png in Resources */ = {isa = PBXBuildFile; fileRef = B6FFA542209CA31700936E58 /* painting_texture_mb.png */; };
+		B6FFA545209CAB9600936E58 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFA544209CAB9600936E58 /* RootViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18764E1B009DE75D84F411D5 /* Pods-MaLiang_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaLiang_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaLiang_Example/Pods-MaLiang_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3F86637CB2273685F81BBA42 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* MaLiang_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaLiang_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7FF3FA5B941FF62868122AF9 /* Pods_MaLiang_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaLiang_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B604919C209A71C000372B21 /* PaintingGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingGestureRecognizer.swift; sourceTree = "<group>"; };
+		B6202B87209F50B900DC0C20 /* PaintingPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingPreview.swift; sourceTree = "<group>"; };
+		B69E669C208C6117005ED0E1 /* MLTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLTexture.swift; sourceTree = "<group>"; };
+		B69E669D208C6117005ED0E1 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		B69E669E208C6117005ED0E1 /* BezierGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierGenerator.swift; sourceTree = "<group>"; };
+		B69E669F208C6117005ED0E1 /* ShaderUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShaderUtil.swift; sourceTree = "<group>"; };
+		B69E66A0208C6117005ED0E1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B69E66A1208C6117005ED0E1 /* MLColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLColor.swift; sourceTree = "<group>"; };
+		B69E66A2208C6117005ED0E1 /* Brush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brush.swift; sourceTree = "<group>"; };
+		B69E66A4208C6117005ED0E1 /* point.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = point.vsh; sourceTree = "<group>"; };
+		B69E66A5208C6117005ED0E1 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
+		B69E66A6208C6117005ED0E1 /* point.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = point.fsh; sourceTree = "<group>"; };
+		B69E66B2208C61C4005ED0E1 /* MLLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLLine.swift; sourceTree = "<group>"; };
+		B69E66B3208C61C4005ED0E1 /* MLView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLView.swift; sourceTree = "<group>"; };
+		B6C188BC2099A91B00A312B6 /* ScrollableCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableCanvas.swift; sourceTree = "<group>"; };
+		B6C188BE2099AA6800A312B6 /* ScrollableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableSample.swift; sourceTree = "<group>"; };
+		B6F023B1208F2A4700D5CFA7 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		B6FFA53E209CA26100936E58 /* pencil-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pencil-2@2x.png"; path = "Images.xcassets/pencil.imageset/pencil-2@2x.png"; sourceTree = "<group>"; };
+		B6FFA540209CA2C200936E58 /* water-pen-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "water-pen-2@2x.png"; path = "Images.xcassets/water-pen.imageset/water-pen-2@2x.png"; sourceTree = "<group>"; };
+		B6FFA542209CA31700936E58 /* painting_texture_mb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = painting_texture_mb.png; sourceTree = "<group>"; };
+		B6FFA544209CAB9600936E58 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E4F56C2627A50ADFF8265C8F /* Pods-MaLiang_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaLiang_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaLiang_Example/Pods-MaLiang_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F3CBFDC0B0167759FA9BD760 /* MaLiang.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MaLiang.podspec; path = ../MaLiang.podspec; sourceTree = "<group>"; };
+		F4B98B2F9C80C87DAC438AFA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1EBAA1B445058D51C18AAF /* Pods_MaLiang_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1464B08E9697703EE06D03F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4F56C2627A50ADFF8265C8F /* Pods-MaLiang_Example.debug.xcconfig */,
+				18764E1B009DE75D84F411D5 /* Pods-MaLiang_Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		607FACC71AFB9204008FA782 = {
+			isa = PBXGroup;
+			children = (
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACD21AFB9204008FA782 /* Example for MaLiang */,
+				B69E6699208C6117005ED0E1 /* MaLiang */,
+				607FACD11AFB9204008FA782 /* Products */,
+				1464B08E9697703EE06D03F5 /* Pods */,
+				F678FE9C7E0D82A7E1EBC344 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		607FACD11AFB9204008FA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD01AFB9204008FA782 /* MaLiang_Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		607FACD21AFB9204008FA782 /* Example for MaLiang */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				B6FFA544209CAB9600936E58 /* RootViewController.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				B6C188BE2099AA6800A312B6 /* ScrollableSample.swift */,
+				B6C188BC2099A91B00A312B6 /* ScrollableCanvas.swift */,
+				B6202B87209F50B900DC0C20 /* PaintingPreview.swift */,
+				B6FFA542209CA31700936E58 /* painting_texture_mb.png */,
+				B6FFA53E209CA26100936E58 /* pencil-2@2x.png */,
+				B6FFA540209CA2C200936E58 /* water-pen-2@2x.png */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
+			);
+			name = "Example for MaLiang";
+			path = MaLiang;
+			sourceTree = "<group>";
+		};
+		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD41AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				F3CBFDC0B0167759FA9BD760 /* MaLiang.podspec */,
+				3F86637CB2273685F81BBA42 /* README.md */,
+				F4B98B2F9C80C87DAC438AFA /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		B68CFBE8208DF34F006170E7 /* MLBase */ = {
+			isa = PBXGroup;
+			children = (
+				B69E669C208C6117005ED0E1 /* MLTexture.swift */,
+				B69E66B2208C61C4005ED0E1 /* MLLine.swift */,
+				B69E66B3208C61C4005ED0E1 /* MLView.swift */,
+				B69E66A1208C6117005ED0E1 /* MLColor.swift */,
+			);
+			path = MLBase;
+			sourceTree = "<group>";
+		};
+		B69E6699208C6117005ED0E1 /* MaLiang */ = {
+			isa = PBXGroup;
+			children = (
+				B69E669A208C6117005ED0E1 /* Classes */,
+				B69E66A3208C6117005ED0E1 /* Resources */,
+			);
+			name = MaLiang;
+			path = ../MaLiang;
+			sourceTree = "<group>";
+		};
+		B69E669A208C6117005ED0E1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B69E669D208C6117005ED0E1 /* Canvas.swift */,
+				B69E66A2208C6117005ED0E1 /* Brush.swift */,
+				B6F023B1208F2A4700D5CFA7 /* Document.swift */,
+				B6F023B0208F1E9200D5CFA7 /* Utils */,
+				B68CFBE8208DF34F006170E7 /* MLBase */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B69E66A3208C6117005ED0E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B69E66A4208C6117005ED0E1 /* point.vsh */,
+				B69E66A5208C6117005ED0E1 /* point.png */,
+				B69E66A6208C6117005ED0E1 /* point.fsh */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6F023B0208F1E9200D5CFA7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B69E66A0208C6117005ED0E1 /* Utils.swift */,
+				B69E669F208C6117005ED0E1 /* ShaderUtil.swift */,
+				B69E669E208C6117005ED0E1 /* BezierGenerator.swift */,
+				B604919C209A71C000372B21 /* PaintingGestureRecognizer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F678FE9C7E0D82A7E1EBC344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF3FA5B941FF62868122AF9 /* Pods_MaLiang_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		607FACCF1AFB9204008FA782 /* MaLiang_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MaLiang_Example" */;
+			buildPhases = (
+				0AB7B8A066F8971C13A58EF6 /* [CP] Check Pods Manifest.lock */,
+				607FACCC1AFB9204008FA782 /* Sources */,
+				607FACCD1AFB9204008FA782 /* Frameworks */,
+				607FACCE1AFB9204008FA782 /* Resources */,
+				E1EBFC16932D85391E716663 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaLiang_Example;
+			productName = MaLiang;
+			productReference = 607FACD01AFB9204008FA782 /* MaLiang_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607FACC81AFB9204008FA782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Harley-xk";
+				TargetAttributes = {
+					607FACCF1AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = M7373J4K8H;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "MaLiang" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 607FACC71AFB9204008FA782;
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				607FACCF1AFB9204008FA782 /* MaLiang_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		607FACCE1AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6FFA541209CA2C300936E58 /* water-pen-2@2x.png in Resources */,
+				B6FFA53F209CA26100936E58 /* pencil-2@2x.png in Resources */,
+				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				B69E66B0208C6117005ED0E1 /* point.png in Resources */,
+				B6FFA543209CA31700936E58 /* painting_texture_mb.png in Resources */,
+				B69E66AF208C6117005ED0E1 /* point.vsh in Resources */,
+				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				B69E66B1208C6117005ED0E1 /* point.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AB7B8A066F8971C13A58EF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaLiang_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1EBFC16932D85391E716663 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MaLiang_Example/Pods-MaLiang_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Comet/Comet.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Comet.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaLiang_Example/Pods-MaLiang_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		607FACCC1AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B604919D209A71C000372B21 /* PaintingGestureRecognizer.swift in Sources */,
+				B69E66AD208C6117005ED0E1 /* MLColor.swift in Sources */,
+				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				B69E66B4208C61C4005ED0E1 /* MLLine.swift in Sources */,
+				B69E66A8208C6117005ED0E1 /* MLTexture.swift in Sources */,
+				B69E66AE208C6117005ED0E1 /* Brush.swift in Sources */,
+				B6FFA545209CAB9600936E58 /* RootViewController.swift in Sources */,
+				B69E66AA208C6117005ED0E1 /* BezierGenerator.swift in Sources */,
+				B6C188BF2099AA6800A312B6 /* ScrollableSample.swift in Sources */,
+				B69E66AC208C6117005ED0E1 /* Utils.swift in Sources */,
+				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				B6F023B2208F2A4700D5CFA7 /* Document.swift in Sources */,
+				B6202B88209F50B900DC0C20 /* PaintingPreview.swift in Sources */,
+				B69E66AB208C6117005ED0E1 /* ShaderUtil.swift in Sources */,
+				B6C188BD2099A91B00A312B6 /* ScrollableCanvas.swift in Sources */,
+				B69E66B5208C61C4005ED0E1 /* MLView.swift in Sources */,
+				B69E66A9208C6117005ED0E1 /* Canvas.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607FACDA1AFB9204008FA782 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607FACDF1AFB9204008FA782 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		607FACED1AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		607FACEE1AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		607FACF01AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4F56C2627A50ADFF8265C8F /* Pods-MaLiang_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = M7373J4K8H;
+				INFOPLIST_FILE = MaLiang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.tku.ml;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		607FACF11AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18764E1B009DE75D84F411D5 /* Pods-MaLiang_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = M7373J4K8H;
+				INFOPLIST_FILE = MaLiang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.tku.ml;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "MaLiang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MaLiang_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF01AFB9204008FA782 /* Debug */,
+				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+}
