@@ -8,7 +8,7 @@ import UIKit
 import Comet
 
 
-// test local 888
+// local
 
 class ViewController: UIViewController {
 
